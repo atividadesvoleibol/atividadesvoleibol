@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garantia Incondicional</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- 1. Barra Superior Fixa (Sticky) -->
+    <div class="top-bar">
+        <span>🔴 DESCONTO SÓ HOJE NESSA PÁGINA (<span id="current-date"></span>)</span>
+    </div>
+
+    <!-- Container geral para empurrar o conteúdo pra baixo por causa do sticky -->
+    <main class="main-content">
+
+        <!-- 1. SEÇÃO: HERO -->
+        <section class="hero-section">
+            <div class="container hero-container">
+                <h1 class="hero-headline">
+                    <span class="hero-line1">+200 ATIVIDADES PRONTAS DE VOLEIBOL</span><br>
+                    <span class="hero-line2">ATIVIDADES CRIATIVAS, VARIADAS E ORGANIZADAS</span><br>
+                    <span class="hero-line3">+ BÔNUS</span>
+                </h1>
+                
+                <p class="hero-subheadline">
+                    Material Pronto Para Aplicar, Não Fique Mais Sem Ideias E Facilitando A Sua Rotina, E Surpreenda Nas Aulas Com Atividades Criativas e Dinâmicas.
+                </p>
+
+                <div class="hero-mockup-wrapper">
+                    <!-- Foi adicionado fallback para .png caso .webp não exista -->
+                    <img src="mockup3d.webp" onerror="this.onerror=null; this.src='mockup3d.png';" alt="Mockup do Material de Voleibol" class="hero-mockup">
+                </div>
+
+                <div class="hero-cta-wrapper">
+                    <p class="hero-social-proof">+1.457 PROFESSORES ADQUIRIRAM</p>
+                    <!-- Usa a mesma classe do CTA final para padronização e uma nova para variações locais se necessário -->
+                    <a href="#" class="cta-button hero-cta">QUERO AGORA</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. SEÇÃO: POR QUE ESCOLHEM ESTE MATERIAL? -->
+        <section class="benefits-section">
+            <div class="container">
+                <h2 class="section-title benefits-title">POR QUE ESCOLHEM ESTE MATERIAL?</h2>
+                
+                <div class="benefits-grid">
+                    <!-- CARD 1 -->
+                    <div class="benefit-card">
+                        <div class="benefit-icon-wrapper">
+                            <span class="benefit-icon">👥</span>
+                        </div>
+                        <h3 class="benefit-card-title">TODAS AS IDADES</h3>
+                        <p class="benefit-card-text">Atividades organizadas por idade, do iniciante ao avançado.</p>
+                    </div>
+
+                    <!-- CARD 2 -->
+                    <div class="benefit-card">
+                        <div class="benefit-icon-wrapper">
+                            <span class="benefit-icon">📋</span>
+                        </div>
+                        <h3 class="benefit-card-title">VARIEDADE DE ATIVIDADES</h3>
+                        <p class="benefit-card-text">Não fique mais sem ideias. São +200 opções prontas para aplicar imediatamente.</p>
+                    </div>
+
+                    <!-- CARD 3 -->
+                    <div class="benefit-card">
+                        <div class="benefit-icon-wrapper">
+                            <span class="benefit-icon">⏱️</span>
+                        </div>
+                        <h3 class="benefit-card-title">ECONOMIA DE TEMPO</h3>
+                        <p class="benefit-card-text">Pare de perder tempo planejando. Tenha tudo pronto e organizado para usar.</p>
+                    </div>
+
+                    <!-- CARD 4 -->
+                    <div class="benefit-card">
+                        <div class="benefit-icon-wrapper">
+                            <span class="benefit-icon">📑</span>
+                        </div>
+                        <h3 class="benefit-card-title">MATERIAL PRONTO E ORGANIZADO POR NÍVEL</h3>
+                        <p class="benefit-card-text">Receba um material completo, estruturado por nível e objetivo para facilitar sua aplicação.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: O QUE VOCÊ VAI RECEBER -->
+        <section class="receive-section">
+            <div class="receive-title-container">
+                <h2 class="section-title receive-title">O Que Você Vai Receber</h2>
+            </div>
+            
+            <div class="swiper receive-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Cards de Conteúdo -->
+                    <div class="swiper-slide">
+                        <img src="atv1.webp" onerror="this.onerror=null; this.src='atv1.png';" alt="Atividade" class="receive-card">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="atv2.webp" onerror="this.onerror=null; this.src='atv2.png';" alt="Atividade" class="receive-card">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="atv3.webp" onerror="this.onerror=null; this.src='atv3.png';" alt="Atividade" class="receive-card">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="atv4.webp" onerror="this.onerror=null; this.src='atv4.png';" alt="Atividade" class="receive-card">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="atv5.webp" onerror="this.onerror=null; this.src='atv5.png';" alt="Atividade" class="receive-card">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: BÔNUS EXCLUSIVOS -->
+        <section class="bonus-section">
+            <div class="container">
+                <h2 class="bonus-title section-title">
+                    <span class="bonus-line1">BÔNUS EXCLUSIVOS</span><br>
+                    <span class="bonus-line2">(LEVE HOJE GRATUITAMENTE)</span>
+                </h2>
+
+                <div class="bonus-grid">
+                    <!-- CARD BÔNUS 1 -->
+                    <div class="bonus-card">
+                        <img src="bonus1.webp" onerror="this.onerror=null; this.src='bonus1.png';" alt="Bônus 1" class="bonus-img">
+                        <h3 class="bonus-name">Plano de Aplicação: 4 Semanas de Aulas de Voleibol Prontas</h3>
+                        <div class="bonus-price">
+                            <span class="price-strikethrough">De R$47,00</span>
+                            <span class="price-free">→ GRÁTIS</span>
+                        </div>
+                    </div>
+
+                    <!-- CARD BÔNUS 2 -->
+                    <div class="bonus-card">
+                        <img src="bonus2.webp" onerror="this.onerror=null; this.src='bonus2.png';" alt="Bônus 2" class="bonus-img">
+                        <h3 class="bonus-name">25 Atividades de Voleibol Sem Equipamentos</h3>
+                        <div class="bonus-price">
+                            <span class="price-strikethrough">De R$37,00</span>
+                            <span class="price-free">→ GRÁTIS</span>
+                        </div>
+                    </div>
+
+                    <!-- CARD BÔNUS 3 -->
+                    <div class="bonus-card">
+                        <img src="bonus3.webp" onerror="this.onerror=null; this.src='bonus3.png';" alt="Bônus 3" class="bonus-img">
+                        <h3 class="bonus-name">25 Aquecimentos Dinâmicos Para Início de Aulas</h3>
+                        <div class="bonus-price">
+                            <span class="price-strikethrough">De R$37,00</span>
+                            <span class="price-free">→ GRÁTIS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BLOCO TEM VALOR TOTAL -->
+                <div class="bonus-total-block compact-bonus">
+                    <p class="bonus-total-price">VALOR TOTAL DOS BÔNUS: R$121,00</p>
+                    <p class="bonus-total-free">(HOJE SAI DE GRAÇA)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: ESCOLHA SEU ACESSO -->
+        <section class="offer-section">
+            <div class="container">
+                <h2 class="section-title offer-title">ESCOLHA SEU ACESSO</h2>
+
+                <div class="offer-grid">
+                    <!-- ACESSO BÁSICO -->
+                    <div class="offer-card basic-offer">
+                        <h3 class="offer-card-title">ACESSO BÁSICO</h3>
+                        
+                        <div class="offer-price-area">
+                            <span class="offer-old-price">De R$37,00</span>
+                            <span class="offer-new-price">R$10,00</span>
+                            <span class="offer-discount">Você economiza R$27,00</span>
+                        </div>
+
+                        <ul class="offer-benefits">
+                            <li><span class="check-icon">✓</span> +200 Atividades prontas para aulas de voleibol em PDF</li>
+                            <li><span class="check-icon">✓</span> Acesso digital por 15 dias</li>
+                            <li><span class="check-icon">✓</span> Organizadas por nível e objetivo</li>
+                            <li><span class="check-icon">✓</span> Garantia de 7 dias</li>
+                        </ul>
+
+                        <button class="btn-basic" id="trigger-upsell" style="border: none; cursor: pointer;">QUERO O BÁSICO</button>
+                    </div>
+
+                    <!-- ACESSO COMPLETO -->
+                    <div class="offer-card premium-offer">
+                        <div class="premium-badge">MAIS VENDIDO</div>
+                        <h3 class="offer-card-title">ACESSO COMPLETO</h3>
+                        
+                        <div class="offer-price-area">
+                            <span class="offer-old-price-red">De R$67,00</span>
+                            <span class="offer-new-price-highlight">R$27,00</span>
+                            <span class="offer-discount" style="color: #00A86B; font-weight: 700;">Você economiza R$40,00 + R$121,00 em bônus</span>
+                        </div>
+
+                        <ul class="offer-benefits">
+                            <li><span class="check-icon highlight-check">✓</span> +200 Atividades prontas em vídeos + PDFs</li>
+                            <li><span class="check-icon highlight-check">✓</span> Acesso digital vitalício</li>
+                            <li><span class="check-icon highlight-check">✓</span> Organizadas por nível e objetivo</li>
+                            <li><span class="check-icon">🎁</span> Plano de Aplicação: 4 Semanas Prontas</li>
+                            <li><span class="check-icon">🎁</span> 25 Aquecimentos Dinâmicos Para Início</li>
+                            <li><span class="check-icon">🎁</span> 25 Atividades de Vôlei Sem Equipamentos</li>
+                        </ul>
+                        
+                        <div class="offer-guarantee">
+                            <p>🛡️ GARANTIA ESTENDIDA DE 14 DIAS</p>
+                        </div>
+
+                        <a href="#" class="cta-button premium-btn">QUERO ACESSO COMPLETO!</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: PROVAS SOCIAIS -->
+        <section class="social-proof-section">
+            <div class="container">
+                <h2 class="section-title social-title">O QUE DIZEM SOBRE O MATERIAL</h2>
+                
+                <!-- Slider main container -->
+                <div class="swiper social-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides (Cards de Print do WhatsApp) -->
+                        <div class="swiper-slide">
+                            <img src="prova1.webp" alt="Print de Whatsapp 1" class="social-proof-card">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="prova2.webp" alt="Print de Whatsapp 2" class="social-proof-card">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="prova3.webp" alt="Print de Whatsapp 3" class="social-proof-card">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="prova4.webp" alt="Print de Whatsapp 4" class="social-proof-card">
+                        </div>
+                    </div>
+                    
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: SOBRE O AUTOR -->
+        <section class="author-section">
+            <div class="container">
+                <h2 class="section-title">Sobre o Autor</h2>
+                
+                <div class="author-content">
+                    <div class="author-image-col">
+                        <img src="autor.webp" onerror="this.onerror=null; this.src='autor.png';" alt="Foto de Jorge Santos" class="author-img">
+                    </div>
+                    <div class="author-info-col">
+                        <span class="author-tag">QUEM CRIOU</span>
+                        <h3 class="author-name">Jorge Santos</h3>
+                        
+                        <div class="author-metrics">
+                            <div class="metric-box">
+                                <span class="metric-number">12+ anos</span>
+                                <span class="metric-text">de experiência</span>
+                            </div>
+                            <div class="metric-box">
+                                <span class="metric-number">15.000+</span>
+                                <span class="metric-text">Aulas dadas</span>
+                            </div>
+                        </div>
+
+                        <p class="author-description">
+                            Professor de Educação Física com experiência no ensino do voleibol para diferentes faixas etárias. Desenvolveu este material com base em sua prática em aulas, reunindo atividades prontas e organizadas para facilitar a rotina de professores e tornar as aulas mais dinâmicas e envolventes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: PERGUNTAS FREQUENTES (FAQ) -->
+        <section class="faq-section">
+            <div class="container faq-container">
+                <h2 class="section-title">Perguntas Frequentes</h2>
+
+                <div class="faq-accordion">
+                    <!-- Pergunta 1 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Como acessar o material?
+                            <span class="faq-icon"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Assim que a compra for confirmada, você receberá imediatamente no seu e-mail um link para baixar todo o material. Basta acessar o e-mail cadastrado na compra e começar a usar.</p>
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 2 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            As atividades servem para quais níveis de alunos?
+                            <span class="faq-icon"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>O material foi desenvolvido para atender desde iniciantes até níveis intermediários, podendo ser facilmente adaptado conforme a idade e o nível dos alunos.</p>
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 3 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Posso usar nas aulas da minha escola, projeto ou academia?
+                            <span class="faq-icon"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim! O material é licenciado para uso profissional, podendo ser utilizado em aulas, treinos coletivos, projetos sociais e academias sem nenhuma restrição.</p>
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 4 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Preciso ter muita experiência com voleibol?
+                            <span class="faq-icon"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Não. As atividades são simples, práticas e já organizadas, facilitando a aplicação mesmo para professores com pouca experiência na modalidade.</p>
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 5 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Como funciona a garantia?
+                            <span class="faq-icon"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Você pode testar o material por 7 dias. Se não ficar satisfeito, basta solicitar o reembolso e devolvemos 100% do seu dinheiro, sem burocracia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 2. Seção de Garantia Incondicional -->
+        <section class="guarantee-section">
+            <div class="container">
+                <img src="garantia.webp" alt="Selo de 7 Dias de Garantia" class="guarantee-icon">
+                <h2 class="guarantee-headline">7 DIAS — Garantia Incondicional</h2>
+                <p class="guarantee-text">
+                    Teste o material por 7 dias. Se não ficar satisfeito(a), devolvemos seu dinheiro sem burocracia.<br class="desktop-break"> 
+                    Sem perguntas, sem complicação. O risco é todo nosso.
+                </p>
+                <!-- 3. Botão CTA -->
+                <a href="#" class="cta-button">COMPRAR COM SEGURANÇA</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- POP-UP BÁSICO PARA PREMIUM (UPSELL) -->
+    <div class="popup-overlay" id="upsell-popup">
+        <div class="popup-content">
+            <button class="popup-close" id="popup-close-x">&times;</button>
+            
+            <div class="popup-header">
+                <h2>ESPERE! 🎉</h2>
+                <p>Oferta Exclusiva — Só Aparece Uma Vez</p>
+            </div>
+            
+            <div class="popup-body">
+                <p class="popup-main-text">Leve o Plano Premium com TODOS os bônus por apenas:</p>
+                
+                <div class="popup-price-row">
+                    <span class="popup-new-price">R$17,00</span>
+                    <span class="popup-old-price">R$27,00</span>
+                </div>
+                
+                <p class="popup-economy">🔥 Economia de R$10</p>
+                
+                <a href="#" class="cta-button popup-btn-primary">QUERO APROVEITAR 🎁</a>
+                <button class="popup-btn-secondary" id="btn-no-thanks">NÃO, QUERO O BÁSICO</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. Rodapé (Footer) -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© 2026 Jorge Santos. Todos os direitos reservados.</p>
+            <p class="footer-license">Material licenciado para uso profissional em aulas de Voleibol, treinos coletivos e atendimentos particulares.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Função para formatar e exibir a data atual no formato DD/MM/AA na barra sticky
+        function updateDate() {
+            const dateElement = document.getElementById('current-date');
+            if (dateElement) {
+                const now = new Date();
+                const day = String(now.getDate()).padStart(2, '0');
+                const month = String(now.getMonth() + 1).padStart(2, '0');
+                const year = String(now.getFullYear()).slice(-2);
+                dateElement.textContent = `${day}/${month}/${year}`;
+            }
+        }
+        updateDate();
+
+        // Lógica do Accordion do FAQ
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentNode;
+                const isActive = item.classList.contains('active');
+                
+                // Fechar todos os abertos
+                document.querySelectorAll('.faq-item').forEach(faq => {
+                    faq.classList.remove('active');
+                    const answer = faq.querySelector('.faq-answer');
+                    if(answer) {
+                        answer.style.maxHeight = null;
+                    }
+                });
+
+                // Se o clicado não estava ativo, abre ele
+                if (!isActive) {
+                    item.classList.add('active');
+                    const answer = item.querySelector('.faq-answer');
+                    if(answer) {
+                        answer.style.maxHeight = answer.scrollHeight + "px";
+                    }
+                }
+            });
+        });
+
+        // Lógica do Popup Upsell
+        const upsellPopup = document.getElementById('upsell-popup');
+        const triggerUpsell = document.getElementById('trigger-upsell');
+        const closeX = document.getElementById('popup-close-x');
+        const closeNoThanks = document.getElementById('btn-no-thanks');
+
+        // Abrir Modal
+        if(triggerUpsell) {
+            triggerUpsell.addEventListener('click', (e) => {
+                e.preventDefault();
+                upsellPopup.classList.add('active');
+            });
+        }
+
+        // Fechar pelo Botão Secundário e X
+        const closePopup = () => {
+            upsellPopup.classList.remove('active');
+            // Redirecionamento original do básico ficaria aqui se for clicar em não quero obrigado
+            // Exemplo: window.location.href = "checkout-basico.html";
+        };
+
+        if(closeX) closeX.addEventListener('click', closePopup);
+        if(closeNoThanks) closeNoThanks.addEventListener('click', closePopup);
+
+        // Fechar Clicando fora (Overlay)
+        window.addEventListener('click', (e) => {
+            if (e.target === upsellPopup) {
+                closePopup();
+            }
+        });
+    </script>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Inicializar o Swiper (Carrossel de Provas Sociais)
+        const swiper = new Swiper('.social-swiper', {
+            // Opções
+            loop: true,
+            grabCursor: true, // Muda o cursor para "agarrar", sugerindo drag
+            autoplay: {
+                delay: 7000,
+                disableOnInteraction: false, // Continua autoplay mesmo após o usuário interagir
+            },
+            // Paginação (bolinhas)
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            // Setas de navegação
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoHeight: true,
+            breakpoints: {
+                // Ajuste caso necessite mostrar itens limitados ou ajustes futuros, atualmente mostra 1 por padrão
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 40
+                }
+            }
+        });
+
+        // Inicializar o Swiper (O Que Você Vai Receber) com Auto-Slide Contínuo (Linear)
+        const receiveSwiper = new Swiper('.receive-swiper', {
+            loop: true,
+            allowTouchMove: false, // Desabilita interação (drag/swipe)
+            simulateTouch: false,
+            speed: 5000, // Velocidade suave e lenta (5s de transição)
+            autoplay: {
+                delay: 0, // Sem atraso entre slides para gerar efeito flat linear
+                disableOnInteraction: false,
+            },
+            slidesPerView: 1.5, // 1 completo + parte do próximo
+            spaceBetween: 20,
+            breakpoints: {
+                768: {
+                    slidesPerView: 3.5, // 3 completos + parte do próximo
+                    spaceBetween: 30
+                }
+            }
+        });
+    </script>
+</body>
+</html>
