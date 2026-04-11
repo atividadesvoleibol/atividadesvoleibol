@@ -3,11 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>200 Atividades de Voleibol</title>
+    <title>200 Atividades Prontas de Voleibol</title>
+    <meta name="description" content="Material completo com +200 atividades prontas de voleibol, organizadas por nível e objetivo. Ideal para professores de Educação Física.">
+    
+    <!-- Preconnect para fontes (já existente) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Preload do CSS crítico (fonte e estilos) -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" as="style">
+    
+    <!-- Fontes com display=swap já evita FOIT -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
+    <!-- Swiper CSS carregado de forma não bloqueante -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"></noscript>
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -23,24 +36,24 @@
         <!-- 1. SEÇÃO: HERO -->
         <section class="hero-section">
             <div class="container hero-container">
-                <h1 class="hero-headline">
-                    <span class="hero-line1">200 ATIVIDADES PRONTAS DE VOLEIBOL</span><br>
-                    <span class="hero-line2">ATIVIDADES CRIATIVAS, VARIADAS E ORGANIZADAS</span><br>
-                    <span class="hero-line3">+ BÔNUS</span>
-                </h1>
-                
-                <p class="hero-subheadline">
-                    Facilite sua rotina com material pronto para aplicar em suas aulas, com atividades criativas e dinâmicas que surpreendem sua turma
-                </p>
+                <div class="hero-text-wrapper">
+                    <h1 class="hero-headline">
+                        <span class="hero-line1">200 ATIVIDADES PRONTAS DE VOLEIBOL</span><br>
+                        <span class="hero-line2">ATIVIDADES CRIATIVAS, VARIADAS E ORGANIZADAS</span><br>
+                        <span class="hero-line3">+ BÔNUS</span>
+                    </h1>
+                    
+                    <p class="hero-subheadline">
+                        Facilite sua rotina com material pronto para aplicar em suas aulas, com atividades criativas e dinâmicas que surpreendem sua turma
+                    </p>
+                </div>
 
                 <div class="hero-mockup-wrapper">
-                    <!-- Foi adicionado fallback para .png caso .webp não exista -->
-                    <img src="mockup3d.webp" onerror="this.onerror=null; this.src='mockup3d.png';" alt="Mockup do Material de Voleibol" class="hero-mockup" fetchpriority="high" width="900" height="900">
+                    <img src="mockup3d.webp" alt="Mockup do Material de Voleibol" class="hero-mockup" width="600" height="600" fetchpriority="high">
                 </div>
 
                 <div class="hero-cta-wrapper">
                     <p class="hero-social-proof">+1.457 PROFESSORES ADQUIRIRAM</p>
-                    <!-- Usa a mesma classe do CTA final para padronização e uma nova para variações locais se necessário -->
                     <a href="#precos" class="cta-button hero-cta">QUERO AGORA</a>
                 </div>
             </div>
@@ -50,10 +63,11 @@
         <section class="benefits-section">
             <div class="container">
                 <h2 class="section-title benefits-title">POR QUE ESCOLHEM ESTE MATERIAL?</h2>
+                <div class="section-divider"></div>
                 
                 <div class="benefits-grid">
                     <!-- CARD 1 -->
-                    <div class="benefit-card">
+                    <div class="benefit-card" data-order="1">
                         <div class="benefit-icon-wrapper">
                             <span class="benefit-icon">👥</span>
                         </div>
@@ -62,7 +76,7 @@
                     </div>
 
                     <!-- CARD 2 -->
-                    <div class="benefit-card">
+                    <div class="benefit-card" data-order="2">
                         <div class="benefit-icon-wrapper">
                             <span class="benefit-icon">📋</span>
                         </div>
@@ -71,7 +85,7 @@
                     </div>
 
                     <!-- CARD 3 -->
-                    <div class="benefit-card">
+                    <div class="benefit-card" data-order="3">
                         <div class="benefit-icon-wrapper">
                             <span class="benefit-icon">⏱️</span>
                         </div>
@@ -80,7 +94,7 @@
                     </div>
 
                     <!-- CARD 4 -->
-                    <div class="benefit-card">
+                    <div class="benefit-card" data-order="4">
                         <div class="benefit-icon-wrapper">
                             <span class="benefit-icon">📑</span>
                         </div>
@@ -93,27 +107,45 @@
 
         <!-- SEÇÃO: O QUE VOCÊ VAI RECEBER -->
         <section class="receive-section">
-            <div class="receive-title-container">
+            <div class="container">
                 <h2 class="section-title receive-title">O Que Você Vai Receber</h2>
-            </div>
-            
-            <div class="swiper receive-swiper">
-                <div class="swiper-wrapper">
-                    <!-- Cards de Conteúdo -->
-                    <div class="swiper-slide">
-                        <img src="atv1.webp" onerror="this.onerror=null; this.src='atv1.png';" alt="Atividade" class="receive-card">
+                <div class="section-divider"></div>
+
+                <div class="receive-grid">
+                    <!-- CARD 1 -->
+                    <div class="receive-card" data-order="1">
+                        <div class="receive-icon-wrapper">
+                            <span class="receive-icon">🎬</span>
+                        </div>
+                        <h3 class="receive-card-title">Material Completo em Vídeos & PDF</h3>
+                        <p class="receive-card-text">200 Atividades de voleibol organizadas e prontas para usar</p>
                     </div>
-                    <div class="swiper-slide">
-                        <img src="atv2.webp" onerror="this.onerror=null; this.src='atv2.png';" alt="Atividade" class="receive-card">
+
+                    <!-- CARD 2 -->
+                    <div class="receive-card" data-order="2">
+                        <div class="receive-icon-wrapper">
+                            <span class="receive-icon">📋</span>
+                        </div>
+                        <h3 class="receive-card-title">Atividades Estruturadas</h3>
+                        <p class="receive-card-text">Todas as atividades organizadas por faixa etária, nível e objetivo</p>
                     </div>
-                    <div class="swiper-slide">
-                        <img src="atv3.webp" onerror="this.onerror=null; this.src='atv3.png';" alt="Atividade" class="receive-card">
+
+                    <!-- CARD 3 -->
+                    <div class="receive-card" data-order="3">
+                        <div class="receive-icon-wrapper">
+                            <span class="receive-icon">🖨️</span>
+                        </div>
+                        <h3 class="receive-card-title">Pronto para Imprimir</h3>
+                        <p class="receive-card-text">Material formatado para impressão em qualquer tamanho</p>
                     </div>
-                    <div class="swiper-slide">
-                        <img src="atv4.webp" onerror="this.onerror=null; this.src='atv4.png';" alt="Atividade" class="receive-card">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="atv5.webp" onerror="this.onerror=null; this.src='atv5.png';" alt="Atividade" class="receive-card">
+
+                    <!-- CARD 4 -->
+                    <div class="receive-card" data-order="4">
+                        <div class="receive-icon-wrapper">
+                            <span class="receive-icon">📱</span>
+                        </div>
+                        <h3 class="receive-card-title">Acesso Digital e Imediato</h3>
+                        <p class="receive-card-text">Acesse por celular, tablet, computador e de imediato após a compra</p>
                     </div>
                 </div>
             </div>
@@ -130,7 +162,7 @@
                 <div class="bonus-grid">
                     <!-- CARD BÔNUS 1 -->
                     <div class="bonus-card">
-                        <img src="bonus1.webp" onerror="this.onerror=null; this.src='bonus1.png';" alt="Bônus 1" class="bonus-img">
+                        <img src="https://i.imgur.com/yMXXkOg.jpeg" alt="Bônus 1" class="bonus-img" width="400" height="400" loading="lazy">
                         <h3 class="bonus-name">Plano de Aplicação: 4 Semanas de Aulas de Voleibol Prontas</h3>
                         <div class="bonus-price">
                             <span class="price-strikethrough">De R$47,00</span>
@@ -140,7 +172,7 @@
 
                     <!-- CARD BÔNUS 2 -->
                     <div class="bonus-card">
-                        <img src="bonus2.webp" onerror="this.onerror=null; this.src='bonus2.png';" alt="Bônus 2" class="bonus-img">
+                        <img src="https://i.imgur.com/XqUKsti.jpeg" alt="Bônus 2" class="bonus-img" width="400" height="400" loading="lazy">
                         <h3 class="bonus-name">25 Atividades de Voleibol Sem Equipamentos</h3>
                         <div class="bonus-price">
                             <span class="price-strikethrough">De R$37,00</span>
@@ -150,7 +182,7 @@
 
                     <!-- CARD BÔNUS 3 -->
                     <div class="bonus-card">
-                        <img src="bonus3.webp" onerror="this.onerror=null; this.src='bonus3.png';" alt="Bônus 3" class="bonus-img">
+                        <img src="https://i.imgur.com/fwgeXPl.jpeg" alt="Bônus 3" class="bonus-img" width="400" height="400" loading="lazy">
                         <h3 class="bonus-name">25 Aquecimentos Dinâmicos Para Início de Aulas</h3>
                         <div class="bonus-price">
                             <span class="price-strikethrough">De R$37,00</span>
@@ -234,16 +266,16 @@
                     <div class="swiper-wrapper">
                         <!-- Slides (Cards de Print do WhatsApp) -->
                         <div class="swiper-slide">
-                            <img src="prova1.webp" alt="Print de Whatsapp 1" class="social-proof-card">
+                            <img src="https://i.imgur.com/itcJQMD.jpeg" alt="Print de Whatsapp 1" class="social-proof-card" width="400" height="700" loading="lazy">
                         </div>
                         <div class="swiper-slide">
-                            <img src="prova2.webp" alt="Print de Whatsapp 2" class="social-proof-card">
+                            <img src="https://i.imgur.com/MrTrXrD.jpeg" alt="Print de Whatsapp 2" class="social-proof-card" width="400" height="700" loading="lazy">
                         </div>
                         <div class="swiper-slide">
-                            <img src="prova3.webp" alt="Print de Whatsapp 3" class="social-proof-card">
+                            <img src="https://i.imgur.com/yj10Iok.jpeg" alt="Print de Whatsapp 3" class="social-proof-card" width="400" height="700" loading="lazy">
                         </div>
                         <div class="swiper-slide">
-                            <img src="prova4.webp" alt="Print de Whatsapp 4" class="social-proof-card">
+                            <img src="https://i.imgur.com/JUbQqKD.jpeg" alt="Print de Whatsapp 4" class="social-proof-card" width="400" height="700" loading="lazy">
                         </div>
                     </div>
                     
@@ -264,7 +296,7 @@
                 
                 <div class="author-content">
                     <div class="author-image-col">
-                        <img src="autor.webp" onerror="this.onerror=null; this.src='autor.png';" alt="Foto de Jorge Santos" class="author-img">
+                        <img src="https://i.imgur.com/XwPTAlA.jpeg" alt="Foto de Jorge Santos" class="author-img" width="250" height="250" loading="lazy">
                     </div>
                     <div class="author-info-col">
                         <span class="author-tag">QUEM CRIOU</span>
@@ -355,16 +387,14 @@
         <!-- 2. Seção de Garantia Incondicional -->
         <section class="guarantee-section">
             <div class="container">
-                <img src="garantia.webp" alt="Selo de 7 Dias de Garantia" class="guarantee-icon">
+                <img src="https://i.imgur.com/nk2Z3qZ.jpeg" alt="Selo de 7 Dias de Garantia" class="guarantee-icon" width="180" height="180" loading="lazy">
                 <h2 class="guarantee-headline">7 DIAS — Garantia Incondicional</h2>
                 <p class="guarantee-text">
                     Teste o material por 7 dias. Se não ficar satisfeito(a), devolvemos seu dinheiro sem burocracia.<br class="desktop-break"> 
                     Sem perguntas, sem complicação. O risco é todo nosso.
                 </p>
                 <!-- 3. Botão CTA -->
-                <a href="#precos" class="cta-button" style="display:inline-block;">
-  COMPRAR COM SEGURANÇA
-</a>
+                <a href="#precos" class="cta-button">COMPRAR COM SEGURANÇA</a>
             </div>
         </section>
     </main>
@@ -478,10 +508,11 @@
     </script>
 
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Swiper JS (defer para não bloquear renderização) -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script>
-        // Inicializar o Swiper (Carrossel de Provas Sociais)
+    // Aguarda todos os scripts (incluindo defer) carregarem
+    window.addEventListener('load', function() {
         const swiper = new Swiper('.social-swiper', {
             // Opções
             loop: true,
@@ -513,29 +544,10 @@
                 }
             }
         });
-
-        // Inicializar o Swiper (O Que Você Vai Receber) com Auto-Slide Contínuo (Linear)
-        const receiveSwiper = new Swiper('.receive-swiper', {
-            loop: true,
-            allowTouchMove: false, // Desabilita interação (drag/swipe)
-            simulateTouch: false,
-            speed: 5000, // Velocidade suave e lenta (5s de transição)
-            autoplay: {
-                delay: 0, // Sem atraso entre slides para gerar efeito flat linear
-                disableOnInteraction: false,
-            },
-            slidesPerView: 1.5, // 1 completo + parte do próximo
-            spaceBetween: 20,
-            breakpoints: {
-                768: {
-                    slidesPerView: 3.5, // 3 completos + parte do próximo
-                    spaceBetween: 30
-                }
-            }
-        });
+    }); // Fim load
     </script>
-
- <script>
+	
+	 <script>
   window.pixelId = "69d6f82fd92430a1a07dbc6c";
   var a = document.createElement("script");
   a.setAttribute("async", "");
@@ -551,6 +563,6 @@
   async
   defer
 ></script>
-
+	
 </body>
 </html>
