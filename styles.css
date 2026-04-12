@@ -207,6 +207,32 @@ body {
     max-width: 400px;
 }
 
+.hero-benefits-bar {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+.hero-benefit-item {
+    background-color: #f5f5f5;
+    border: 1px solid #eaeaea;
+    border-radius: 20px;
+    padding: 8px 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: #444;
+    font-weight: 500;
+}
+
+.hero-benefit-icon {
+    display: flex;
+    align-items: center;
+}
+
 /* DIVISOR DECORATIVO (sob os títulos) */
 .section-divider {
     width: 60px;
@@ -978,7 +1004,7 @@ body {
 
 .offer-price-area {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     padding-bottom: 20px;
     border-bottom: 1px solid #eee;
     display: flex;
@@ -990,14 +1016,16 @@ body {
     font-size: 1rem;
     text-decoration: line-through;
     margin-bottom: 5px;
+    display: block;
 }
 
 .offer-old-price-red {
     color: #e53935;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     text-decoration: line-through;
     margin-bottom: 5px;
     font-weight: 600;
+    display: block;
 }
 
 .offer-new-price {
@@ -1005,7 +1033,8 @@ body {
     font-size: 2.8rem;
     font-weight: 900;
     line-height: 1;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    display: block;
 }
 
 .offer-new-price-highlight {
@@ -1014,7 +1043,16 @@ body {
     font-size: 3.5rem;
     font-weight: 900;
     line-height: 1;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.payment-type-text {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 12px;
+    font-weight: 500;
+    display: block;
 }
 
 .offer-discount {
@@ -1049,6 +1087,60 @@ body {
     font-weight: bold;
     margin-right: 10px;
     font-size: 1.1rem;
+}
+
+.premium-divider {
+    height: 1px;
+    background-color: #eee;
+    margin: 15px 0 20px 0;
+    width: 100%;
+}
+
+.premium-bonus-subtitle {
+    font-size: 14px;
+    font-weight: 800;
+    color: #333;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.premium-bonus-list {
+    margin-bottom: 25px;
+}
+
+.trust-badges-area {
+    margin: 10px 0 20px 0;
+    padding-top: 20px;
+    border-top: 1px dashed #eee;
+    text-align: center;
+}
+
+.trust-badges-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.trust-badge-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-size: 11px;
+    color: #666;
+    line-height: 1.2;
+}
+
+.trust-badge-text {
+    font-size: 12px;
+    color: #777;
+    margin-top: 15px;
+}
+
+.trust-badge-text strong {
+    color: #555;
+    font-weight: 700;
 }
 
 .highlight-check {
